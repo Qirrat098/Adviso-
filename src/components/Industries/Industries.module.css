@@ -1,0 +1,203 @@
+/* Industries Section */
+.industries {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 10%;
+  margin: 60px 10px;
+  gap: 40px;
+  background-color: #f8f9fc;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.industries::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 10px;
+  height: 20px;
+  background: rgba(108, 99, 255, 0.08);
+  border-radius: 50%;
+}
+
+/* Left Content */
+.left {
+  flex: 1;
+  padding: 10px 0px 10px 20px;
+  border-radius: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background: linear-gradient(90deg, #f3f4ff, #e0e7ff);
+  color: #6c63ff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.15);
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 31px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 10px 0 25px;
+  padding-right: 20px;
+  max-width: 480px;
+}
+
+p {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 30px;
+  padding-right: 15%;
+  max-width: 520px;
+}
+
+.learnMore {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(64, 43, 220, 1);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0px  0px;
+  box-shadow: 0 4px 12px rgba(64, 43, 220, 0.2);
+}
+
+.learnMore:hover {
+  transform: translateY(-2px);
+  background-color: #4b47cc;
+  box-shadow: 0 6px 16px rgba(64, 43, 220, 0.3);
+}
+
+/* Right Content */
+.right {
+  flex: 1.5;
+  padding: 10px 20px 20px 20px; /* Reduce padding to allow more space */
+  border-radius: 12px;
+}
+
+.right p {
+  font-size: 16px; /* Adjust font size for better readability */
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 20px; /* Add spacing between paragraphs */
+  padding: 0; /* Remove padding to allow full width */
+  max-width: none; /* Ensure the text uses the full width of the container */
+  text-align: justify; /* Optional: Justify text for a cleaner look */
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.statBox {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 17px 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  position: relative;
+  transition: transform 0.3s ease;
+  min-height: 80px;
+}
+
+.statBox:hover {
+  transform: translateY(-4px);
+}
+
+.statBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #6c63ff, #8580ff);
+  border-radius: 14px 0 0 14px; /* Match the inner border radius of the statBox */
+}
+
+.statBox h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0 0 12px;
+  padding-right: 0; /* Remove padding to allow full width */
+}
+
+.statBox p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+  padding-right: 0; /* Remove padding to allow full width */
+  max-width: none; /* Remove max-width to allow text to use full space */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .industries {
+    margin: 40px;
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .industries {
+    flex-direction: column;
+    margin: 30px;
+    padding: 50px 30px;
+  }
+  
+  .left, .right {
+    width: 100%;
+    padding: 20px 0 !important;
+  }
+  
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  h2 {
+    padding-right: 0;
+  }
+  
+  p {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .industries {
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 12px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .statBox {
+    padding: 25px 20px;
+  }
+}

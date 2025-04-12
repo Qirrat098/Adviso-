@@ -1,0 +1,118 @@
+.hero {
+  text-align: center; /* Center-align text */
+  padding: 40px 10px; /* Adjust padding for better fit */
+  background-color: #ffffff; /* Optional: Light background for contrast */
+  margin-top: -20px; /* Adjust spacing above the section */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+h1 {
+  font-size: 40px; /* Adjust heading size */
+  color: #333;
+  margin-bottom: 15px; /* Adjust spacing below the heading */
+  text-align: center; /* Ensure the heading is centered */
+}
+
+p {
+  font-size: 16px; /* Adjust font size for better readability */
+  color: #555;
+  margin: 70px 0; /* Adjust spacing around the paragraph */
+  text-align: center; /* Center-align the paragraph */
+  max-width: 600px; /* Limit the width of the text for better readability */
+}
+.subtext {
+  font-size: 16px; /* Slightly smaller font size */
+  color: #555;
+  margin-top: 8px;
+  margin-bottom: 20px; /* Reduce spacing below the subtext */
+  line-height: 1.4;
+  margin-top: 20px; /* Reduce spacing above the button */
+  margin-right: -220px;
+  align-items: center;
+
+}
+
+.ctaButton {
+  padding: 16px 24px; /* Smaller button size */
+  font-size: 14px;
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0px; /* Reduce spacing above the button */
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #333; /* Add hover effect */
+}
+
+.reviews {
+  margin-top: 40px; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  white-space: nowrap; /* Keep text in one line */
+}
+
+.reviewsText {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  display: inline-block; /* Keep text inline */
+  vertical-align: middle;
+}
+.stars {
+  font-size: 24px; /* Slightly larger stars */
+  color: gold;
+  margin-bottom: 7px; /* Reduce spacing below the stars */
+  text-align: center;
+}
+
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 0px; /* Reduce spacing between profile images */
+  margin-top: 0px;
+}
+
+.profile {
+  width: 40px; /* Smaller profile images */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff; /* Add a border for better visibility */
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Reduce spacing between images */
+  margin-top: 20px; /* Reduce spacing above the images section */
+}
+
+.image {
+  width: 230px; /* Smaller images */
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 40px; /* Reduce heading size */
+  color: #333;
+  margin-bottom: 15px; /* Reduce spacing below the heading */
+}
+
+p {
+  margin: 0%;
+}

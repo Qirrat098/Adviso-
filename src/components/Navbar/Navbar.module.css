@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between brand and links */
+  padding: 10px 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.links {
+  display: flex;
+  gap: 30px; /* Add spacing between links */
+  margin-left: 850px; /* Push links to the right */
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: rgba(64, 43, 220, 1);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px; /* Add spacing between links and button */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
